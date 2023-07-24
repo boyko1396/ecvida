@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0">
+<meta name="description" content="Ecvida">
+<title>Ecvida</title>
+<link href="./css/style.css?v=136132632" type="text/css" rel="stylesheet">
+<link href="./css/media.css?v=136132632" type="text/css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- root BEGIN -->
+<div id="root">
+  <!-- header BEGIN -->
+  <header class="header">
+    <div class="container container--size-md header__container">
+      <a href="#intro" class="header__logo">
+        <img src="./images/logo.png" alt="Ecvida">
+      </a>
+      <button type="button" class="js-btn-nav btn-toggle header__toggle">
+        <svg class="icon btn-toggle__icon">
+          <use xlink:href="images/sprite.svg#btn-toggle"></use>
+        </svg>
+      </button>
+      <nav id="nav" class="nav header__nav" role="navigation">
+        <button type="button" class="js-btn-nav btn-toggle header-nav__close">
+          <svg class="icon btn-toggle__icon">
+            <use xlink:href="images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#about" data-menuanchor="about" class="js-header-nav-link nav__link">О компании</a></li>
+          <li class="nav__item"><a href="#ecvida-today" data-menuanchor="ecvida-today" class="js-header-nav-link nav__link">Новости</a></li>
+          <li class="nav__item"><a href="#info-clients" data-menuanchor="info-clients" class="js-header-nav-link nav__link">Новым клиентам</a></li>
+          <li class="nav__item"><a href="#info-business" data-menuanchor="info-business" class="js-header-nav-link nav__link">Для бизнеса</a></li>
+          <li class="nav__item"><a href="#contacts-section" data-menuanchor="contacts-section" class="js-header-nav-link nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- header END -->
+  <main id="fullpage" class="main" role="main">
+    <!-- intro BEGIN -->
+    <section data-anchor="intro" class="section intro">
+      <div class="section-cell">
+        <div class="intro__bg-video">
+          <video autoplay loop playsinline muted data-autoplay>
+            <source src="./media/videos/video-intro.webm" type="video/webm"> 
+            <source src="./media/videos/video-intro.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="container container--size-md intro__container">
+          <div class="row intro__row">
+            <div class="row__col-5 intro__col-content">
+              <div class="intro__content">
+                <h2 class="title-size-5 intro__content-subtitle">Организация, по стандартам которой управляющие и профильные компании оказывают качественные услуги собственникам жилых и нежилых помещений в <nobr>Санкт-Петербурге</nobr> и Ленинградской области.</h2>
+                <ul class="title-size-3 intro__content-list">
+                  <li><span class="color-accent">109</span> объектов</li>
+                  <li><span class="color-accent">17</span> лет на рынке</li>
+                  <li><span class="color-accent">13</span> компаний</li>
+                </ul>
+                <div class="visible-sm video-responsive video-responsive--resolution-8-6 intro__media-video">
+                  <video autoplay loop playsinline muted data-autoplay>
+                    <source src="./media/videos/video-intro.webm" type="video/webm">
+                    <source src="./media/videos/video-intro.mp4" type="video/mp4">
+                  </video>
+                  <a href="./media/videos/video-intro.mp4" class="js-video-play-btn play-btn video-responsive__play-btn" data-fancybox>
+                    <span class="play-btn__picture">
+                      <svg class="play-btn__icon">
+                        <use xlink:href="./images/sprite.svg#play-btn"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row__col-6 intro__col-media">
+              <div class="intro__media">
+                <h1 class="intro__media-brand">
+                  <span class="color-accent">Ec</span>vida
+                </h1>
+                <div class="hidden-sm video-responsive video-responsive--resolution-8-6 intro__media-video">
+                  <video autoplay loop playsinline muted data-autoplay>
+                    <source src="./media/videos/video-intro.webm" type="video/webm">
+                    <source src="./media/videos/video-intro.mp4" type="video/mp4">
+                  </video>
+                  <a href="./media/videos/video-intro.mp4" class="js-video-play-btn play-btn video-responsive__play-btn" data-fancybox>
+                    <span class="play-btn__picture">
+                      <svg class="play-btn__icon">
+                        <use xlink:href="./images/sprite.svg#play-btn"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- intro END -->
+    <!-- about BEGIN -->
+    <section data-anchor="about" class="section about">
+      <div class="section-cell">
+        <div class="container container--size-md about__container">
+          <div class="section-title visible-lg">О компании</div>
+          <h2 class="title-size-3 about__title"><a href="javascript:;" data-fancybox data-src="#modal-about" class="js-fancybox-init btn btn--size-md btn--theme-accent" target="_blank"><span class="btn__inner"><span class="btn__title">Стандарты Эквида</span></span></a> адаптивны под многоквартирный дом и жилой комплекс любой сложности, и являются интеллектуальной собственностью компании. </h2>
+          <div class="row about__row">
+            <div class="row__col-6 about__col-card">
+              <article class="about__card">
+                <h3 class="title-size-3 about__card-title">Управляющие<br>компании</h3>
+                <ul class="title-size-5 about__card-list">
+                  <li title="Электротехнические и общестроительные работы">ООО «ОКС»</li>
+                  <li title="Электротехнические и общестроительные работы">ООО «КСМ»</li>
+                  <li title="Электротехнические и общестроительные работы">ООО «УК Комсети»</li>
+                  <li title="Электротехнические и общестроительные работы">ООО «УК «Прокси»</li>
+                  <li title="Электротехнические и общестроительные работы">ООО «УК «Сервис+»</li>
+                  <li title="Электротехнические и общестроительные работы">ООО «Эквида-Север»</li>
+                  <li title="Электротехнические и общестроительные работы">ООО «Эквида-Сервис»</li>
+                  <li title="Электротехнические и общестроительные работы">ООО «УК Коммунальные сети»</li>
+                </ul>
+              </article>
+            </div>
+            <div class="row__col-6 about__col-card">
+              <article class="about__card">
+                <h3 class="title-size-3 about__card-title">Обслуживающие<br>компании</h3>
+                <ul class="title-size-5 about__card-list">
+                  <li title="Обслуживание подъемных механизмов">ООО «Городская лифтовая компания №1»</li>
+                  <li title="Обслуживание слаботочных систем">ООО «Стандарт»</li>
+                  <li title="Электротехническое, общестроительное, аварийное обслуживание">ООО «СТЭлС»</li>
+                  <li title="Ведение бухгалтерского и налогового учета">ООО «Учетно-сервисная компания»</li>
+                  <li title="Теплоэнергетическое обслуживание">ООО «ЭНКОРС»</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+          <footer class="about__footer">
+            <p class="title-size-3 about__footer-description"><strong class="fs-">За 17 лет</strong> компании ни один из многоквартирных домов не&nbsp;вышел из управления</p>
+            <a href="javascript:;" data-fancybox data-src="#modal-company-about" class="js-fancybox-init btn btn--size-md btn--theme-accent about__footer-btn">
+              <span class="btn__inner">
+                <span class="btn__title">Подробнее</span>
+              </span>
+            </a>
+          </footer>
+        </div>
+      </div>
+    </section>
+    <!-- about END -->
+    <!-- ecvida-today BEGIN -->
+    <section data-anchor="ecvida-today" class="section ecvida-today">
+      <div class="section-cell">
+        <div class="container container--size-md ecvida-today__container">
+          <div class="section-title section-title--news visible-lg">Новости</div>
+          <div class="row ecvida-today__row">
+            <div class="row__col-6 ecvida-today__col-content">
+              <div class="ecvida-today__content">
+                <h2 class="title-size-1 ecvida-today__title">«Эквида» сегодня</h2>
+                <div class="ecvida-today__list-graph-info-wrap">
+                  <div class="ecvida-today__list-graph-info">
+                    <div class="graph-info-el graph-info-el--dir-x graph-info-el--theme-1 ecvida-today__list-graph-info-line">
+                      <span class="graph-info-el__color"></span>
+                      <div class="graph-info-el__title">Успешно проведено ОСС, шт</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--dir-x graph-info-el--theme-2 ecvida-today__list-graph-info-line">
+                      <span class="graph-info-el__color"></span>
+                      <div class="graph-info-el__title">Создание совета дома МКД, %</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--dir-x graph-info-el--theme-3 ecvida-today__list-graph-info-line">
+                      <span class="graph-info-el__color"></span>
+                      <div class="graph-info-el__title">Обьекты в управлении, шт</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ecvida-today__list-graph-info-list">
+                  <div class="ecvida-today__list-graph-info-list-col">
+                    <div class="graph-info-el graph-info-el--dir-y graph-info-el--theme-1 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 2.1rem;"></span>
+                      <div class="graph-info-el__title">24</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--dir-y graph-info-el--theme-2 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 3.2rem;"></span>
+                      <div class="graph-info-el__title">37</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--dir-y graph-info-el--theme-3 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 8.8rem;"></span>
+                      <div class="graph-info-el__title">86</div>
+                    </div>
+                    <div class="ecvida-today__list-graph-info-list-year">2019</div>
+                  </div>
+                  <div class="ecvida-today__list-graph-info-list-col">
+                    <div class="graph-info-el graph-info-el--dir-y graph-info-el--theme-1 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 2.7rem;"></span>
+                      <div class="graph-info-el__title">26</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--dir-y graph-info-el--theme-2 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 4.6rem;"></span>
+                      <div class="graph-info-el__title">48</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--dir-y graph-info-el--theme-3 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 10.5rem;"></span>
+                      <div class="graph-info-el__title">91</div>
+                    </div>
+                    <div class="ecvida-today__list-graph-info-list-year">2020</div>
+                  </div>
+                  <div class="ecvida-today__list-graph-info-list-col">
+                    <div class="graph-info-el graph-info-el--dir-y graph-info-el--theme-1 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 3rem;"></span>
+                      <div class="graph-info-el__title">27</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--dir-y graph-info-el--theme-2 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 5rem;"></span>
+                      <div class="graph-info-el__title">49</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--dir-y graph-info-el--theme-3 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 11.6rem;"></span>
+                      <div class="graph-info-el__title">98</div>
+                    </div>
+                    <div class="ecvida-today__list-graph-info-list-year">2021</div>
+                  </div>
+                  <div class="ecvida-today__list-graph-info-list-col">
+                    <div class="graph-info-el graph-info-el--dir-y graph-info-el--theme-1 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 6.7rem;"></span>
+                      <div class="graph-info-el__title">65</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--dir-y graph-info-el--theme-2 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 5.7rem;"></span>
+                      <div class="graph-info-el__title">52</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--dir-y graph-info-el--theme-3 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 13.1rem;"></span>
+                      <div class="graph-info-el__title">103</div>
+                    </div>
+                    <div class="ecvida-today__list-graph-info-list-year">2022</div>
+                  </div>
+                  <div class="ecvida-today__list-graph-info-list-col">
+                    <div class="graph-info-el graph-info-el--dir-y graph-info-el--theme-1 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: .9rem;"></span>
+                      <div class="graph-info-el__title">7</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--dir-y graph-info-el--theme-2 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 7.2rem;"></span>
+                      <div class="graph-info-el__title">68</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--dir-y graph-info-el--theme-3 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 14.2rem;"></span>
+                      <div class="graph-info-el__title">109</div>
+                    </div>
+                    <div class="ecvida-today__list-graph-info-list-year">2023</div>
+                  </div>
+                </div>
+                <div class="ecvida-today__moore">
+                  <a href="javascript:;" data-fancybox data-src="#modal-ecvida-today" class="js-fancybox-init btn btn--size-md btn--theme-accent ecvida-today__btn-moore">
+                    <span class="btn__inner">
+                      <span class="btn__title">Подробнее</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row__col-6 ecvida-today__col-news">
+              <div class="ecvida-today__news">
+                <div class="js-slider-ecvida-today-news ecvida-today__news-slider">
+                  <div class="ecvida-today__news-slider-slide">
+                    <article class="news-card">
+                      <picture class="news-card__picture">
+                        <img src="./images/news-card-1.jpg" alt="Новость 1" class="news-card__img">
+                      </picture>
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">
+                          <a href="javascript:;" data-fancybox data-src="#modal-news" class="js-fancybox-init link-cover news-card__link">Новость 1</a>
+                        </h3>
+                        <p class="news-card__description">За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="ecvida-today__news-slider-slide">
+                    <article class="news-card">
+                      <picture class="news-card__picture">
+                        <img src="./images/news-card-4.jpg" alt="Новость 2" class="news-card__img">
+                      </picture>
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">
+                          <a href="javascript:;" data-fancybox data-src="#modal-news" class="js-fancybox-init link-cover news-card__link">Новость 2</a>
+                        </h3>
+                        <p class="news-card__description">За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="ecvida-today__news-slider-slide">
+                    <article class="news-card">
+                      <picture class="news-card__picture">
+                        <img src="./images/news-card-2.jpg" alt="Новость 3" class="news-card__img">
+                      </picture>
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">
+                          <a href="javascript:;" data-fancybox data-src="#modal-news" class="js-fancybox-init link-cover news-card__link">Новость 3</a>
+                        </h3>
+                        <p class="news-card__description">За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="ecvida-today__news-slider-slide">
+                    <article class="news-card">
+                      <picture class="news-card__picture">
+                        <img src="./images/news-card-3.jpg" alt="Новость 4" class="news-card__img">
+                      </picture>
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">
+                          <a href="javascript:;" data-fancybox data-src="#modal-news" class="js-fancybox-init link-cover news-card__link">Новость 4</a>
+                        </h3>
+                        <p class="news-card__description">За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="ecvida-today__news-slider-slide">
+                    <article class="news-card">
+                      <picture class="news-card__picture">
+                        <img src="./images/news-card-3.jpg" alt="Новость 4" class="news-card__img">
+                      </picture>
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">
+                          <a href="javascript:;" data-fancybox data-src="#modal-news" class="js-fancybox-init link-cover news-card__link">Новость 4</a>
+                        </h3>
+                        <p class="news-card__description">За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="ecvida-today__news-slider-slide">
+                    <article class="news-card">
+                      <picture class="news-card__picture">
+                        <img src="./images/news-card-3.jpg" alt="Новость 4" class="news-card__img">
+                      </picture>
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">
+                          <a href="javascript:;" data-fancybox data-src="#modal-news" class="js-fancybox-init link-cover news-card__link">Новость 4</a>
+                        </h3>
+                        <p class="news-card__description">За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="ecvida-today__news-slider-slide">
+                    <article class="news-card">
+                      <picture class="news-card__picture">
+                        <img src="./images/news-card-3.jpg" alt="Новость 4" class="news-card__img">
+                      </picture>
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">
+                          <a href="javascript:;" data-fancybox data-src="#modal-news" class="js-fancybox-init link-cover news-card__link">Новость 4</a>
+                        </h3>
+                        <p class="news-card__description">За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="ecvida-today__news-slider-slide">
+                    <article class="news-card">
+                      <picture class="news-card__picture">
+                        <img src="./images/news-card-3.jpg" alt="Новость 4" class="news-card__img">
+                      </picture>
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">
+                          <a href="javascript:;" data-fancybox data-src="#modal-news" class="js-fancybox-init link-cover news-card__link">Новость 4</a>
+                        </h3>
+                        <p class="news-card__description">За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="ecvida-today__news-slider-slide">
+                    <article class="news-card">
+                      <picture class="news-card__picture">
+                        <img src="./images/news-card-3.jpg" alt="Новость 4" class="news-card__img">
+                      </picture>
+                      <div class="news-card__content">
+                        <h3 class="news-card__title">
+                          <a href="javascript:;" data-fancybox data-src="#modal-news" class="js-fancybox-init link-cover news-card__link">Новость 4</a>
+                        </h3>
+                        <p class="news-card__description">За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <footer class="ecvida-today__news-footer">
+                  <a href="javascript:;" data-fancybox data-src="#modal-news-column" class="js-fancybox-init btn btn--size-md btn--theme-accent ecvida-today__news-footer-btn">
+                    <span class="btn__inner">
+                      <span class="btn__title">Колонка от первого лица</span>
+                    </span>
+                  </a>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ecvida-today END -->
+    <!-- info-section BEGIN -->
+    <section data-anchor="info-clients" class="section info-section">
+      <div class="section-cell">
+        <div class="container container--size-md info-section__container">
+          <div class="section-title visible-lg">Новым клиентам</div>
+          <h2 class="title-size-2 info-section__title"><strong>ВЫ, СОБСТВЕННИК</strong> помещения или инициативная группа МКД?<br><br><strong>ВЫ&nbsp;НАМЕРЕНЫ</strong> изменить уровень предоставляемых услуг в вашем доме?<br><br><strong>МЫ ПОМОЖЕМ.</strong></h2>
+          <div class="info-block info-block--clients info-section__list">
+            <div class="info-block__body">
+              <div class="info-block__bg"></div>
+              <div class="info-block__list">
+                <article class="info-card info-block__card">
+                  <a href="javascript:;" data-fancybox data-src="#modal-form" class="js-fancybox-init btn btn--size-md btn--theme-accent info-card__btn">
+                    <span class="btn__inner">
+                      <span class="btn__title">Заказать обратный&nbsp;звонок</span>
+                    </span>
+                  </a>
+                </article>
+                <article class="info-card info-block__card">
+                  <h3 class="info-card__title"><strong>МЫ ИЗУЧАЕМ</strong> ваш&nbsp;дом, потребности и пожелания жителей</h3>
+                </article>
+                <article class="info-card info-block__card">
+                  <h3 class="info-card__title"><strong>ВЫ УТВЕРЖДАЕТЕ</strong> предложенный нами план по развитию МКД</h3>
+                </article>
+                <article class="info-card info-block__card">
+                  <h3 class="info-card__title"><strong>МЫ ПОМОГАЕМ</strong> в&nbsp;проведении ОСС</h3>
+                </article>
+                <article class="info-card info-block__card">
+                  <h3 class="info-card__title"><strong>ВЫ ПОЛУЧАЕТЕ</strong> качественные услуги в соответствии с договором управления</h3>
+                </article>
+              </div>
+              <div class="info-block__dot"></div>
+              <div class="info-block__dot-item info-block__dot-item--1"></div>
+              <div class="info-block__dot-item info-block__dot-item--2"></div>
+              <div class="info-block__dot-item info-block__dot-item--3"></div>
+              <div class="info-block__dot-item info-block__dot-item--4"></div>
+            </div>
+          </div>
+          <footer class="info-section__footer">
+            <article class="info-card info-section__footer-appeal">
+              <h3 class="info-card__title"><strong>МЫ ГОТОВЫ</strong> доказать вам, что многое можно изменить.</h3>
+              <a href="javascript:;" data-fancybox data-src="#modal-info-clients" class="js-fancybox-init btn btn--size-md btn--theme-accent info-card__btn">
+                <span class="btn__inner">
+                  <span class="btn__title">Подробнее</span>
+                </span>
+              </a>
+            </article>
+          </footer>
+        </div>
+      </div>
+    </section>
+    <!-- info-section END -->
+    <!-- info-section BEGIN -->
+    <section data-anchor="info-business" class="section info-section" style="background-image: url(./images/section-bg-2.jpg);">
+      <div class="section-cell">
+        <div class="container container--size-md info-section__container">
+          <div class="section-title visible-lg">Для бизнеса</div>
+          <h2 class="title-size-2 info-section__title"><strong>ВЫ СТРОИТЕЛЬНАЯ</strong> компания?<br><br><strong>ДЛЯ&nbsp;ВАС ВАЖНО</strong> качество жизни людей в построенном доме?</h2>
+          <div class="info-block info-block--business info-section__list">
+            <div class="info-block__body">
+              <div class="info-block__bg"></div>
+              <div class="info-block__list">
+                <article class="hidden-lg info-card info-block__card">&nbsp;</article>
+                <article class="info-card info-block__card">
+                  <h3 class="info-card__title"><strong>ВЫ&nbsp;ПРИНИМАЕТЕ</strong> решение о сотрудничестве</h3>
+                </article>
+                <article class="info-card info-block__card">
+                  <h3 class="info-card__title"><strong>МЫ&nbsp;ИЗУЧАЕМ</strong> ваш&nbsp;объект и разрабатываем индивидуальный пакет услуг</h3>
+                </article>
+                <article class="info-card info-block__card">
+                  <h3 class="info-card__title"><strong>МЫ&nbsp;ГОТОВИМ</strong> коммерческое предложение</h3>
+                </article>
+                <article class="info-card info-block__card">
+                  <h3 class="info-card__title"><strong>ВЫ&nbsp;УТВЕРЖДАЕТЕ</strong> концепцию обслуживания объекта</h3>
+                </article>
+              </div>
+              <div class="info-block__dot"></div>
+              <div class="info-block__dot-item info-block__dot-item--1"></div>
+              <div class="info-block__dot-item info-block__dot-item--2"></div>
+              <div class="info-block__dot-item info-block__dot-item--3"></div>
+              <div class="info-block__dot-item info-block__dot-item--4"></div>
+            </div>
+          </div>
+          <footer class="info-section__footer">
+            <article class="info-card info-section__footer-appeal">
+              <h3 class="info-card__title"><strong>ОБЕСПЕЧИМ ВЫСОКОЕ</strong> качество жизни в построенном вами доме. Гарантируем.</h3>
+              <a href="javascript:;" data-fancybox data-src="#modal-info-business" class="js-fancybox-init btn btn--size-md btn--theme-accent info-card__btn">
+                <span class="btn__inner">
+                  <span class="btn__title">Подробнее</span>
+                </span>
+              </a>
+            </article>
+          </footer>
+        </div>
+      </div>
+    </section>
+    <!-- info-section END -->
+    <!-- contacts-section BEGIN -->
+    <section data-anchor="contacts-section" class="section contacts-section">
+      <div class="section-cell">
+        <div class="container container--size-md contacts-section__container">
+          <div class="section-title visible-lg">Наши контакты</div>
+          <h2 class="visually-hidden title-size-2 contacts-section__title">Наши контакты</h2>
+          <div class="contacts-section__box">
+            <div class="row contacts-section__box-row">
+              <div class="row__col-8 contacts-section__col-map">
+                <div class="u-map contacts-section__map">
+                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af3c8b7ea431deb438603fa1d23c1d73f1837dcd1bc5957d54e91e7ee3026add3&amp;source=constructor" frameborder="0"></iframe>
+                </div>
+              </div>
+              <div class="row__col-4 contacts-section__col-content">
+                <ul class="contacts-list">
+                  <li class="contacts-list__item">
+                    <div class="contact-line">
+                      <div class="contact-line__picture">
+                        <svg class="contact-line__icon">
+                          <use xlink:href="./images/sprite.svg#pin-mark"></use>
+                        </svg>
+                      </div>
+                      <div class="contact-line__text">194354, г.Санкт-Петербург, ул. Есенина, дом 9, корпус 1.</div>
+                    </div>
+                  </li>
+                  <li class="contacts-list__item">
+                    <div class="contact-line">
+                      <div class="contact-line__picture">
+                        <svg class="contact-line__icon">
+                          <use xlink:href="./images/sprite.svg#phone"></use>
+                        </svg>
+                      </div>
+                      <div class="contact-line__text">Тел: <a href="tel:+78126773637">+7 (812) 677-36-37</a></div>
+                    </div>
+                  </li>
+                  <li class="contacts-list__item">
+                    <div class="contact-line">
+                      <div class="contact-line__picture">
+                        <svg class="contact-line__icon">
+                          <use xlink:href="./images/sprite.svg#email"></use>
+                        </svg>
+                      </div>
+                      <div class="contact-line__text"><a href="mailto:info@ecvida.ru">info@ecvida.ru</a></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contacts-section END -->
+  </main>
+
+  <!-- modal fancybox BEGIN-->
+  <div id="modal-about" class="u-modal u-modal--size-md">
+    <div class="u-modal__container">
+      <header class="u-modal__header">
+        <button type="button" data-fancybox-close class="fancybox-button fancybox-button--close" title="Close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z"></path></svg></button>
+      </header>
+      <div class="u-modal__body">
+        <div class="info-content-list u-modal__body-info-content-list">
+          <article class="info-content-card info-content-card--ecvida info-content-list__item">
+            <h3 class="info-content-card__title"><strong>Стандарты Эквида</strong> -  это основанные на многолетнем опыте ключевых сотрудников компании и лидеров рынка:</h3>
+            <div class="info-content-card__content">
+              <p>более 150 детальных бизнес-процессов;</p>
+              <p>технологичные карты и чек-листы;</p>
+              <p>методические рекомендации функциональные обязанности сотрудников;</p>
+              <p>современные принципы подбора, адаптации, аттестации, оценки и обучения персонала;</p>
+              <p>особая система мотивации персонала;</p>
+              <p>уникальная методика коммуникации с клиентами;</p>
+              <p>прозрачная система отчетности перед жителями;</p>
+              <p>современные и уникальные IT – продукты и многое другое.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-company" class="u-modal u-modal--size-md">
+    <div class="u-modal__container">
+      <header class="u-modal__header">
+        <button type="button" data-fancybox-close class="fancybox-button fancybox-button--close" title="Close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z"></path></svg></button>
+      </header>
+      <div class="u-modal__body">
+        <div class="info-content-list u-modal__body-info-content-list">
+          <article class="info-content-card info-content-list__item">
+            <h3 class="info-content-card__title">Мы изучаем ваш объект и разрабатываем индивидуальный пакет услуг</h3>
+            <div class="info-content-card__content">
+              <p>§ На основании концепции, предложенной застройщиком своим клиентам, мы формируем пакет услуг, направленный на реализацию данной концепции, ее поддержание и дальнейшее совершенствование</p>
+              <p>§ На основании детального анализа инженерных систем, конструктивных элементов и элементов благоустройства, мы предложим технологические карты и сформируем оптимальную стоимость технического обслуживания и содержания этих систем</p>
+              <p>§ На основании анализа особенностей мест общего пользования вашего объекта и инфраструктуры, и прилегающих территорий, а также элементов благоустройства и элементов озеленения, мы предложим необходимый перечень, требующих технических и механизированных средств. Рассчитаем оптимальную стоимость для выполнения качественного обслуживания.</p>
+            </div>
+          </article>
+          <article class="info-content-card info-content-list__item">
+            <h3 class="info-content-card__title">Мы отравляем вам коммерческое предложение</h3>
+            <div class="info-content-card__content">
+              <p>§ На основании вышесказанного, мы формируем подробное коммерческое предложение, которое будет соответствовать тому уровню и той идеи, которую застройщик закладывал при создании своего проекта и продажи клиентам</p>
+            </div>
+          </article>
+          <article class="info-content-card info-content-list__item">
+            <h3 class="info-content-card__title">Вы получаете управляющую компанию, которая через качественный сервис сохраняет ваш имидж</h3>
+            <div class="info-content-card__content">
+              <p>§ Наша компания обладает всеми необходимыми компетенциями, ресурсами и опытом, для того, чтобы ожидания клиентов соответствовали реальности.</p>
+              <p>§ Мы позаботимся о том, чтобы повторные продажи ваших клиентов только увеличивались. Вы сможете уверенно говорить вашим клиентам, что стоимость квадратного метра жилья с годами будет только дорожать. И покупка квартир на ваших объектах — это стабильная инвестиция на будущее.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-company-about" class="u-modal u-modal--size-md">
+    <div class="u-modal__container">
+      <header class="u-modal__header">
+        <button type="button" data-fancybox-close class="fancybox-button fancybox-button--close" title="Close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z"></path></svg></button>
+      </header>
+      <div class="u-modal__body">
+        <div class="modal-about">
+          <h2 class="modal-about__title">О компании Эквида</h2>
+          <div class="modal-about__list">
+            <article class="row modal-about__list-row">
+              <div class="row__col-4 modal-about__list-col-picture hidden-lg">
+                <picture class="modal-about__picture">
+                  <img src="./images/modal-about-1.jpg" alt="Кто мы такие:">
+                </picture>
+              </div>
+              <div class="row__col-7 modal-about__list-col-content">
+                <div class="modal-about__content">
+                  <h3 class="title-size-3 modal-about__subtitle">Кто мы такие:</h3>
+                  <picture class="modal-about__picture visible-lg">
+                    <img src="./images/modal-about-1.jpg" alt="Кто мы такие:">
+                  </picture>
+                  <div class="content modal-about__text">
+                    <p>«Эквида» - дружная команда единомышленников, обладающих высокими профессиональными компетенциями, искренне разделяющих миссию и ценности компании. Каждый сотрудник нашего коллектива имеет возможности для профессионального развития и реализации своего творческого потенциала. Успех компании зависит от результатов каждого из нас.<br>Мы знаем все современные инструменты в сфере ЖКХ и успешно ими пользуемся, опережая потребности рынка.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="row modal-about__list-row">
+              <div class="row__col-4 modal-about__list-col-picture hidden-lg">
+                <picture class="modal-about__picture">
+                  <img src="./images/modal-about-2.jpg" alt="Наши основные принципы:">
+                </picture>
+              </div>
+              <div class="row__col-7 modal-about__list-col-content">
+                <div class="modal-about__content">
+                  <h3 class="title-size-3 modal-about__subtitle">Наши основные принципы:</h3>
+                  <picture class="modal-about__picture visible-lg">
+                    <img src="./images/modal-about-2.jpg" alt="Наши основные принципы:">
+                  </picture>
+                  <div class="content modal-about__text">
+                    <ul>
+                      <li>Доверие жителей, как основа наших взаимоотношений с ними</li>
+                      <li>Непрерывное развитие компетенций и технологий</li>
+                      <li>Открытость, честность и объективность к своим результатам</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="row modal-about__list-row">
+              <div class="row__col-4 modal-about__list-col-picture hidden-lg">
+                <picture class="modal-about__picture">
+                  <img src="./images/modal-about-3.jpg" alt="Кто мы такие:">
+                </picture>
+              </div>
+              <div class="row__col-7 modal-about__list-col-content">
+                <div class="modal-about__content">
+                  <h3 class="title-size-3 modal-about__subtitle">Основой философии <span>компании Эквида является ориентация на потребности клиента. Поэтому, мы:</span></h3>
+                  <picture class="modal-about__picture visible-lg">
+                    <img src="./images/modal-about-3.jpg" alt="Кто мы такие:">
+                  </picture>
+                  <div class="content modal-about__text">
+                    <ul>
+                      <li>слышим и учитываем предложения и пожелания наших клиентов</li>
+                      <li>совместно с собственниками помещений формируем и реализуем концепцию обслуживания</li>
+                      <li>выполняем свои обещания и четко следуем договорным обязательствам перед нашими клиентами</li>
+                      <li>оперативно решаем вопросы наших клиентов, беря всю ответственность за принятые решения и результаты на себя</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="row modal-about__list-row">
+              <div class="row__col-4 modal-about__list-col-picture hidden-lg">
+                <picture class="modal-about__picture">
+                  <img src="./images/modal-about-4.jpg" alt="Результат, который мы достигаем:">
+                </picture>
+              </div>
+              <div class="row__col-7 modal-about__list-col-content">
+                <div class="modal-about__content">
+                  <h3 class="title-size-3 modal-about__subtitle">Результат, который мы достигаем:</h3>
+                  <picture class="modal-about__picture visible-lg">
+                    <img src="./images/modal-about-4.jpg" alt="Результат, который мы достигаем:">
+                  </picture>
+                  <div class="content modal-about__text">
+                    <ul>
+                      <li>Своевременное и качественное выполнение взятых обязательств</li>
+                      <li>Высокий уровень удовлетворенности жителей нашей работой</li>
+                      <li>Рыночная цена недвижимости в обслуживаемых нами домах выше, чем в аналогичных объектах</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-info-clients" class="u-modal u-modal--size-md">
+    <div class="u-modal__container">
+      <header class="u-modal__header">
+        <button type="button" data-fancybox-close class="fancybox-button fancybox-button--close" title="Close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z"></path></svg></button>
+      </header>
+      <div class="u-modal__body">
+        <div class="info-content-list u-modal__body-info-content-list">
+          <article class="info-content-card info-content-list__item">
+            <h3 class="info-content-card__title">Мы изучаем ваш дом, потребности и пожелания жителей</h3>
+            <div class="info-content-card__content">
+              <p>• Специалисты нашей компании осматривают и делают предварительный анализ состояния инженерных систем, конструктивных особенностей дома. На основе полученных результатов формируем перечень мероприятий, направленных на безаварийную и надежную работу инженерного оборудования, обеспечение бесперебойного предоставления коммунальных услуг</p>
+              <p>• Инженерно-технический персонал нашей компании определяет потребность в оборудовании, разрабатывает технологичные карты, регламенты и требования к персоналу, который будет обслуживать ваш дом</p>
+              <p>• Сотрудники службы клиентского сервиса совместно с активом дома изучают потребности жителей, проблемы, которые влияют на качество жизни в доме, пожелания жителей.</p>
+              <p>• На основе состояния дома, пожеланий жителей к качеству и периодичности услуг, рассчитывается оптимальный тариф на жилищные услуги</p>
+            </div>
+          </article>
+          <article class="info-content-card info-content-list__item">
+            <h3 class="info-content-card__title">Вы утверждаете предложенный нами план по развитию МКД</h3>
+            <div class="info-content-card__content">
+              <p>• На основе всех полученных данных о состоянии дома, пожеланий и ожиданий собственников помещений, мы разрабатываем краткосрочные и долгосрочные планы развития вашего дома. </p>
+              <p>• Предварительно с планом знакомится инициативная группа жителей дома и после корректировок он выносится на обсуждение всеми собственниками помещений. После учета всех предложений и правок составляется окончательная версия плана развития дома.</p>
+            </div>
+          </article>
+          <article class="info-content-card info-content-list__item">
+            <h3 class="info-content-card__title">Мы помогаем активным жителям дома в проведении ОСС</h3>
+            <div class="info-content-card__content">
+              <p>• С активными жителями дома, юристами нашей компании составляем актуальную повестку ОСС и все материалы к нему</p>
+              <p>• Утверждаем проект договора управления и все приложения к нему</p>
+              <p>• Оказываем содействие в максимальном вовлечении жителей в участии в общем собрании собственников</p>
+              <p>• Организуем всемерную информационную поддержку всех этапов ОСС</p>
+              <p>• Содействуем в открытом и юридически взвешенном подсчете голосов участников собрания, составлении протокола и приложений к нему</p>
+              <p>• Помогаем инициаторам собрания в реализации принятых на общем собрании решений собственников</p>
+            </div>
+          </article>
+          <article class="info-content-card info-content-list__item">
+            <h3 class="info-content-card__title">Вы получаете качественные услуги в соответствии с договором управления</h3>
+            <div class="info-content-card__content">
+              <p>• Мы технологичная и современная компания, поэтому услуги, оказываемые нами, отработаны до мелочей</p>
+              <p>• Персонал компании подбирается и обучается в соответствии с задачами, которые поставили перед нами жители</p>
+              <p>• Мы всегда защищаем интересы наших клиентов в рамках исполнения договора управления по обслуживанию общего имущества – гарантийные обязательства застройщика, качество предоставляемых коммунальных услуг, соблюдение собственниками принятых правил проживания (при наличии службы охраны или администраторов)</p>
+              <p>• Предоставляем доступ ко всем сервисам, разработанным для наших клиентов (личный кабинет, мобильное приложение, аварийное и паспортное обслуживание, оплата услуг, запись на прием к специалистам компании и др.)</p>
+              <p>• У вас будет возможность участвовать в формировании плана текущего ремонта вашего дома, благоустройства и озеленения</p>
+              <p>• Вы будете получать понятные и актуальные отчеты о выполнении нами договора управления</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-info-business" class="u-modal u-modal--size-md">
+    <div class="u-modal__container">
+      <header class="u-modal__header">
+        <button type="button" data-fancybox-close class="fancybox-button fancybox-button--close" title="Close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z"></path></svg></button>
+      </header>
+      <div class="u-modal__body">
+        <div class="info-content-list u-modal__body-info-content-list">
+          <article class="info-content-card info-content-list__item">
+            <h3 class="info-content-card__title">Мы изучаем ваш объект и разрабатываем индивидуальный пакет услуг</h3>
+            <div class="info-content-card__content">
+              <p>• На основании концепции, предложенной застройщиком своим клиентам, анализа ожиданий дольщиков, мы формируем пакет услуг, направленных на реализацию первичной концепции, ее поддержание и дальнейшее совершенствование</p>
+              <p>• После детального анализа инженерных систем, конструктивных особенностей дома, элементов благоустройства и озеленения, расположенных на земельном участке, мы предложим технологические карты по содержанию и обслуживанию общего имущества многоквартирного дома, оптимальный тариф на жилищные услуги для будущих жителей</p>
+            </div>
+          </article>
+          <article class="info-content-card info-content-list__item">
+            <h3 class="info-content-card__title">Мы готовим коммерческое предложение</h3>
+            <div class="info-content-card__content">
+              <p>• Коммерческое предложение будет содержать взаимодействие УК с застройщиком, учитывая интересы всех сторон, включая дольщиков</p>
+            </div>
+          </article>
+          <article class="info-content-card info-content-list__item">
+            <h3 class="info-content-card__title">Вы утверждаете концепцию обслуживания объекта </h3>
+            <div class="info-content-card__content">
+              <p>• Концепция обслуживания будет учитывать не только порядок предоставления качественных жилищных услуг в соответствии с ожиданиями будущих жителей, но и создании в доме атмосферы добрососедства, уважения законных интересов и прав всех собственников помещений</p>
+              <p>• Концепция будет содержать порядок взаимодействия УК и застройщика для достижения целей оперативного реагирования на все обращения собственников в рамках гарантийного обслуживания</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-ecvida-today" class="u-modal u-modal--size-md">
+    <div class="u-modal__container">
+      <header class="u-modal__header">
+        <button type="button" data-fancybox-close class="fancybox-button fancybox-button--close" title="Close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z"></path></svg></button>
+      </header>
+      <div class="u-modal__body">
+        <div class="row u-modal__body-ecvida-today">
+          <div class="row__col-7 u-modal__body-ecvida-today-col-list">
+            <div class="row u-modal__body-ecvida-today-row">
+              <div class="row__col-12 u-modal__body-ecvida-today-col">
+                <div class="u-modal__body-ecvida-today-info-graph">
+                  <div class="graph-info-el graph-info-el--dir-x graph-info-el--theme-2 u-modal__body-ecvida-today-info-graph-line">
+                    <span class="graph-info-el__color"></span>
+                    <div class="graph-info-el__title">Пользователи личным кабинетом «Эквида», шт</div>
+                  </div>
+                  <div class="graph-info-el graph-info-el--dir-x graph-info-el--theme-3 u-modal__body-ecvida-today-info-graph-line">
+                    <span class="graph-info-el__color"></span>
+                    <div class="graph-info-el__title">Обслуживание лицевых счетов, шт</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row__col-12 u-modal__body-ecvida-today-col">
+                <div class="u-modal__body-ecvida-today-data-graph">
+                  <div class="u-modal__body-ecvida-today-data-graph__year">2019</div>
+                  <div class="graph-info-el graph-info-el--dir-x graph-info-el--theme-3 u-modal__body-ecvida-today-data-graph-line">
+                    <span class="graph-info-el__color" style="width: 46%;"></span>
+                    <div class="graph-info-el__title">18 477</div>
+                  </div>
+                </div>
+                <div class="u-modal__body-ecvida-today-data-graph">
+                  <div class="u-modal__body-ecvida-today-data-graph__year">2020</div>
+                  <div class="graph-info-el graph-info-el--dir-x graph-info-el--theme-2 u-modal__body-ecvida-today-data-graph-line">
+                    <span class="graph-info-el__color" style="width: 6.4%;"></span>
+                    <div class="graph-info-el__title">2 530</div>
+                  </div>
+                  <div class="graph-info-el graph-info-el--dir-x graph-info-el--theme-3 u-modal__body-ecvida-today-data-graph-line">
+                    <span class="graph-info-el__color" style="width: 53%;"></span>
+                    <div class="graph-info-el__title">20 126</div>
+                  </div>
+                </div>
+                <div class="u-modal__body-ecvida-today-data-graph">
+                  <div class="u-modal__body-ecvida-today-data-graph__year">2021</div>
+                  <div class="graph-info-el graph-info-el--dir-x graph-info-el--theme-2 u-modal__body-ecvida-today-data-graph-line">
+                    <span class="graph-info-el__color" style="width: 32%;"></span>
+                    <div class="graph-info-el__title">13 022</div>
+                  </div>
+                  <div class="graph-info-el graph-info-el--dir-x graph-info-el--theme-3 u-modal__body-ecvida-today-data-graph-line">
+                    <span class="graph-info-el__color" style="width: 63%;"></span>
+                    <div class="graph-info-el__title">29 703</div>
+                  </div>
+                </div>
+                <div class="u-modal__body-ecvida-today-data-graph">
+                  <div class="u-modal__body-ecvida-today-data-graph__year">2022</div>
+                  <div class="graph-info-el graph-info-el--dir-x graph-info-el--theme-2 u-modal__body-ecvida-today-data-graph-line">
+                    <span class="graph-info-el__color" style="width: 38%;"></span>
+                    <div class="graph-info-el__title">16 265</div>
+                  </div>
+                  <div class="graph-info-el graph-info-el--dir-x graph-info-el--theme-3 u-modal__body-ecvida-today-data-graph-line">
+                    <span class="graph-info-el__color" style="width: 70%;"></span>
+                    <div class="graph-info-el__title">31 864</div>
+                  </div>
+                </div>
+                <div class="u-modal__body-ecvida-today-data-graph">
+                  <div class="u-modal__body-ecvida-today-data-graph__year">2023</div>
+                  <div class="graph-info-el graph-info-el--dir-x graph-info-el--theme-2 u-modal__body-ecvida-today-data-graph-line">
+                    <span class="graph-info-el__color" style="width: 42%;"></span>
+                    <div class="graph-info-el__title">17 020</div>
+                  </div>
+                  <div class="graph-info-el graph-info-el--dir-x graph-info-el--theme-3 u-modal__body-ecvida-today-data-graph-line">
+                    <span class="graph-info-el__color" style="width: 74%;"></span>
+                    <div class="graph-info-el__title">32 332</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row__col-6 u-modal__body-ecvida-today-col">
+                <div class="ecvida-today__list-graph-info-wrap">
+                  <div class="ecvida-today__list-graph-info">
+                    <div class="graph-info-el graph-info-el--dir-x graph-info-el--theme-1 ecvida-today__list-graph-info-line">
+                      <span class="graph-info-el__color"></span>
+                      <div class="graph-info-el__title">Успешно проведено ОСС, шт</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--dir-x graph-info-el--theme-2 ecvida-today__list-graph-info-line">
+                      <span class="graph-info-el__color"></span>
+                      <div class="graph-info-el__title">Создание совета дома МКД, %</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--dir-x graph-info-el--theme-3 ecvida-today__list-graph-info-line">
+                      <span class="graph-info-el__color"></span>
+                      <div class="graph-info-el__title">Обьекты в управлении, шт</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ecvida-today__list-graph-info-list">
+                  <div class="ecvida-today__list-graph-info-list-col">
+                    <div class="graph-info-el graph-info-el--size-sm graph-info-el--dir-y graph-info-el--theme-1 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 2.1rem;"></span>
+                      <div class="graph-info-el__title">24</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--size-sm graph-info-el--dir-y graph-info-el--theme-2 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 3.2rem;"></span>
+                      <div class="graph-info-el__title">37</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--size-sm graph-info-el--dir-y graph-info-el--theme-3 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 6rem;"></span>
+                      <div class="graph-info-el__title">86</div>
+                    </div>
+                    <div class="ecvida-today__list-graph-info-list-year">2019</div>
+                  </div>
+                  <div class="ecvida-today__list-graph-info-list-col">
+                    <div class="graph-info-el graph-info-el--size-sm graph-info-el--dir-y graph-info-el--theme-1 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 2.7rem;"></span>
+                      <div class="graph-info-el__title">26</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--size-sm graph-info-el--dir-y graph-info-el--theme-2 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 4.6rem;"></span>
+                      <div class="graph-info-el__title">48</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--size-sm graph-info-el--dir-y graph-info-el--theme-3 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 6.7rem;"></span>
+                      <div class="graph-info-el__title">91</div>
+                    </div>
+                    <div class="ecvida-today__list-graph-info-list-year">2020</div>
+                  </div>
+                  <div class="ecvida-today__list-graph-info-list-col">
+                    <div class="graph-info-el graph-info-el--size-sm graph-info-el--dir-y graph-info-el--theme-1 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 3rem;"></span>
+                      <div class="graph-info-el__title">27</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--size-sm graph-info-el--dir-y graph-info-el--theme-2 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 5rem;"></span>
+                      <div class="graph-info-el__title">49</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--size-sm graph-info-el--dir-y graph-info-el--theme-3 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 8.1rem;"></span>
+                      <div class="graph-info-el__title">98</div>
+                    </div>
+                    <div class="ecvida-today__list-graph-info-list-year">2021</div>
+                  </div>
+                  <div class="ecvida-today__list-graph-info-list-col">
+                    <div class="graph-info-el graph-info-el--size-sm graph-info-el--dir-y graph-info-el--theme-1 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 6.7rem;"></span>
+                      <div class="graph-info-el__title">65</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--size-sm graph-info-el--dir-y graph-info-el--theme-2 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 5.7rem;"></span>
+                      <div class="graph-info-el__title">52</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--size-sm graph-info-el--dir-y graph-info-el--theme-3 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 9.2rem;"></span>
+                      <div class="graph-info-el__title">103</div>
+                    </div>
+                    <div class="ecvida-today__list-graph-info-list-year">2022</div>
+                  </div>
+                  <div class="ecvida-today__list-graph-info-list-col">
+                    <div class="graph-info-el graph-info-el--size-sm graph-info-el--dir-y graph-info-el--theme-1 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: .9rem;"></span>
+                      <div class="graph-info-el__title">7</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--size-sm graph-info-el--dir-y graph-info-el--theme-2 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 7.2rem;"></span>
+                      <div class="graph-info-el__title">68</div>
+                    </div>
+                    <div class="graph-info-el graph-info-el--size-sm graph-info-el--dir-y graph-info-el--theme-3 ecvida-today__list-graph-info-list-line">
+                      <span class="graph-info-el__color" style="height: 14.2rem;"></span>
+                      <div class="graph-info-el__title">109</div>
+                    </div>
+                    <div class="ecvida-today__list-graph-info-list-year">2023</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row__col-6 u-modal__body-ecvida-today-col">
+                <div class="ecvida-today__card">
+                  <div class="ecvida-today__card-title">квадратные метры в управлении</div>
+                  <div class="ecvida-today__card-list-object">
+                    <div class="graph-circle ecvida-today__card-list-object-item">
+                      <span class="graph-circle__circle" style="width: 8.1rem;" data-count="783 258"></span>
+                      <p class="graph-circle__count">2019</p>
+                    </div>
+                    <div class="graph-circle ecvida-today__card-list-object-item">
+                      <span class="graph-circle__circle" style="width: 8.4rem;" data-count="803 870"></span>
+                      <p class="graph-circle__count">2020</p>
+                    </div>
+                    <div class="graph-circle ecvida-today__card-list-object-item">
+                      <span class="graph-circle__circle" style="width: 9rem;" data-count="920 891"></span>
+                      <p class="graph-circle__count">2021</p>
+                    </div>
+                    <div class="graph-circle ecvida-today__card-list-object-item">
+                      <span class="graph-circle__circle" style="width: 10rem;" data-count="1 010 280"></span>
+                      <p class="graph-circle__count">2022</p>
+                    </div>
+                    <div class="graph-circle ecvida-today__card-list-object-item">
+                      <span class="graph-circle__circle" style="width: 10.8rem;" data-count="1 183 040"></span>
+                      <p class="graph-circle__count">2023</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row__col-5 u-modal__body-ecvida-today-col-content">
+            <div class="u-scrollbar u-modal__body-ecvida-today-content">
+              <p>За 16 лет в компании группы ни один из многоквартирных домов не вышел из управления За 16 лет в компании группы ни один из многоквартирных домов не вышел из управления За 16 лет в компании группы ни один из многоквартирных домов не вышел из управления За 16 лет в компании группы ни один из многоквартирных домов не вышел из управления</p>
+              <p>За 16 лет в компании группы ни один из многоквартирных домов не вышел из управления За 16 лет в компании группы ни один из многоквартирных домов не вышел из управления За 16 лет в компании группы ни один из многоквартирных домов не вышел из управления За 16 лет в компании группы ни один из многоквартирных домов не вышел из управления</p>
+              <p>За 16 лет в компании группы ни один из многоквартирных домов не вышел из управления За 16 лет в компании группы ни один из многоквартирных домов не вышел из управления За 16 лет в компании группы ни один из многоквартирных домов не вышел из управления За 16 лет в компании группы ни один из многоквартирных домов не вышел из управления</p>
+              <p>За 16 лет в компании группы ни один из многоквартирных домов не вышел из управления За 16 лет в компании группы ни один из многоквартирных домов не вышел из управления За 16 лет в компании группы ни один из многоквартирных домов не вышел из управления За 16 лет в компании группы ни один из многоквартирных домов не вышел из управления</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-news" class="u-modal u-modal--size-md">
+    <div class="u-modal__container">
+      <header class="u-modal__header">
+        <button type="button" data-fancybox-close class="fancybox-button fancybox-button--close" title="Close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z"></path></svg></button>
+      </header>
+      <div class="u-modal__body">
+        <div class="js-slider-news-init u-modal__body-slider">
+          <div class="u-modal__body-slider-slide">
+            <article class="news-article">
+              <div class="row news-article__row">
+                <div class="row__col-4 news-article__col-picture">
+                  <picture class="news-article__picture">
+                    <img src="./images/news-card-1.jpg" alt="Новость 1" class="news-article__img">
+                  </picture>
+                </div>
+                <div class="row__col-8 news-article__col-content">
+                  <div class="u-scrollbar news-article__content">
+                    <div class="news-article__header">
+                      <h3 class="news-article__title">Новость 1</h3>
+                      <p class="news-article__date">04.03.2023</p>
+                    </div>
+                    <div class="news-article__text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis ipsam pariatur repudiandae repellat cumque reprehenderit quas debitis minus facilis voluptas, fugiat soluta perferendis quis deserunt, in, optio numquam! A, eveniet.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque eveniet, voluptatibus. Doloribus fugiat accusamus facilis sequi nihil tempora nulla omnis amet qui explicabo perspiciatis debitis, expedita, distinctio voluptatibus a.</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="u-modal__body-slider-slide">
+            <article class="news-article">
+              <div class="row news-article__row">
+                <div class="row__col-4 news-article__col-picture">
+                  <picture class="news-article__picture">
+                    <img src="./images/news-card-4.jpg" alt="Новость 2" class="news-article__img">
+                  </picture>
+                </div>
+                <div class="row__col-8 news-article__col-content">
+                  <div class="u-scrollbar news-article__content">
+                    <div class="news-article__header">
+                      <h3 class="news-article__title">Новость 2</h3>
+                      <p class="news-article__date">04.03.2023</p>
+                    </div>
+                    <div class="news-article__text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis ipsam pariatur repudiandae repellat cumque reprehenderit quas debitis minus facilis voluptas, fugiat soluta perferendis quis deserunt, in, optio numquam! A, eveniet.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque eveniet, voluptatibus. Doloribus fugiat accusamus facilis sequi nihil tempora nulla omnis amet qui explicabo perspiciatis debitis, expedita, distinctio voluptatibus a.</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                      <p>За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="u-modal__body-slider-slide">
+            <article class="news-article">
+              <div class="row news-article__row">
+                <div class="row__col-4 news-article__col-picture">
+                  <picture class="news-article__picture">
+                    <img src="./images/news-card-2.jpg" alt="Новость 3" class="news-article__img">
+                  </picture>
+                </div>
+                <div class="row__col-8 news-article__col-content">
+                  <div class="u-scrollbar news-article__content">
+                    <div class="news-article__header">
+                      <h3 class="news-article__title">Новость 3</h3>
+                      <p class="news-article__date">04.03.2023</p>
+                    </div>
+                    <div class="news-article__text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis ipsam pariatur repudiandae repellat cumque reprehenderit quas debitis minus facilis voluptas, fugiat soluta perferendis quis deserunt, in, optio numquam! A, eveniet.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="u-modal__body-slider-slide">
+            <article class="news-article">
+              <div class="row news-article__row">
+                <div class="row__col-4 news-article__col-picture">
+                  <picture class="news-article__picture">
+                    <img src="./images/news-card-3.jpg" alt="Новость 4" class="news-article__img">
+                  </picture>
+                </div>
+                <div class="row__col-8 news-article__col-content">
+                  <div class="u-scrollbar news-article__content">
+                    <div class="news-article__header">
+                      <h3 class="news-article__title">Новость 1</h3>
+                      <p class="news-article__date">04.03.2023</p>
+                    </div>
+                    <div class="news-article__text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis ipsam pariatur repudiandae repellat cumque reprehenderit quas debitis minus facilis voluptas, fugiat soluta perferendis quis deserunt, in, optio numquam! A, eveniet.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque eveniet, voluptatibus. Doloribus fugiat accusamus facilis sequi nihil tempora nulla omnis amet qui explicabo perspiciatis debitis, expedita, distinctio voluptatibus a.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="u-modal__body-slider-slide">
+            <article class="news-article">
+              <div class="row news-article__row">
+                <div class="row__col-4 news-article__col-picture">
+                  <picture class="news-article__picture">
+                    <img src="./images/news-card-3.jpg" alt="Новость 4" class="news-article__img">
+                  </picture>
+                </div>
+                <div class="row__col-8 news-article__col-content">
+                  <div class="u-scrollbar news-article__content">
+                    <div class="news-article__header">
+                      <h3 class="news-article__title">Новость 1</h3>
+                      <p class="news-article__date">04.03.2023</p>
+                    </div>
+                    <div class="news-article__text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis ipsam pariatur repudiandae repellat cumque reprehenderit quas debitis minus facilis voluptas, fugiat soluta perferendis quis deserunt, in, optio numquam! A, eveniet.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque eveniet, voluptatibus. Doloribus fugiat accusamus facilis sequi nihil tempora nulla omnis amet qui explicabo perspiciatis debitis, expedita, distinctio voluptatibus a.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="u-modal__body-slider-slide">
+            <article class="news-article">
+              <div class="row news-article__row">
+                <div class="row__col-4 news-article__col-picture">
+                  <picture class="news-article__picture">
+                    <img src="./images/news-card-3.jpg" alt="Новость 4" class="news-article__img">
+                  </picture>
+                </div>
+                <div class="row__col-8 news-article__col-content">
+                  <div class="u-scrollbar news-article__content">
+                    <div class="news-article__header">
+                      <h3 class="news-article__title">Новость 1</h3>
+                      <p class="news-article__date">04.03.2023</p>
+                    </div>
+                    <div class="news-article__text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis ipsam pariatur repudiandae repellat cumque reprehenderit quas debitis minus facilis voluptas, fugiat soluta perferendis quis deserunt, in, optio numquam! A, eveniet.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque eveniet, voluptatibus. Doloribus fugiat accusamus facilis sequi nihil tempora nulla omnis amet qui explicabo perspiciatis debitis, expedita, distinctio voluptatibus a.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="u-modal__body-slider-slide">
+            <article class="news-article">
+              <div class="row news-article__row">
+                <div class="row__col-4 news-article__col-picture">
+                  <picture class="news-article__picture">
+                    <img src="./images/news-card-3.jpg" alt="Новость 4" class="news-article__img">
+                  </picture>
+                </div>
+                <div class="row__col-8 news-article__col-content">
+                  <div class="u-scrollbar news-article__content">
+                    <div class="news-article__header">
+                      <h3 class="news-article__title">Новость 1</h3>
+                      <p class="news-article__date">04.03.2023</p>
+                    </div>
+                    <div class="news-article__text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis ipsam pariatur repudiandae repellat cumque reprehenderit quas debitis minus facilis voluptas, fugiat soluta perferendis quis deserunt, in, optio numquam! A, eveniet.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque eveniet, voluptatibus. Doloribus fugiat accusamus facilis sequi nihil tempora nulla omnis amet qui explicabo perspiciatis debitis, expedita, distinctio voluptatibus a.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="u-modal__body-slider-slide">
+            <article class="news-article">
+              <div class="row news-article__row">
+                <div class="row__col-4 news-article__col-picture">
+                  <picture class="news-article__picture">
+                    <img src="./images/news-card-3.jpg" alt="Новость 4" class="news-article__img">
+                  </picture>
+                </div>
+                <div class="row__col-8 news-article__col-content">
+                  <div class="u-scrollbar news-article__content">
+                    <div class="news-article__header">
+                      <h3 class="news-article__title">Новость 1</h3>
+                      <p class="news-article__date">04.03.2023</p>
+                    </div>
+                    <div class="news-article__text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis ipsam pariatur repudiandae repellat cumque reprehenderit quas debitis minus facilis voluptas, fugiat soluta perferendis quis deserunt, in, optio numquam! A, eveniet.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque eveniet, voluptatibus. Doloribus fugiat accusamus facilis sequi nihil tempora nulla omnis amet qui explicabo perspiciatis debitis, expedita, distinctio voluptatibus a.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="u-modal__body-slider-slide">
+            <article class="news-article">
+              <div class="row news-article__row">
+                <div class="row__col-4 news-article__col-picture">
+                  <picture class="news-article__picture">
+                    <img src="./images/news-card-3.jpg" alt="Новость 4" class="news-article__img">
+                  </picture>
+                </div>
+                <div class="row__col-8 news-article__col-content">
+                  <div class="u-scrollbar news-article__content">
+                    <div class="news-article__header">
+                      <h3 class="news-article__title">Новость 1</h3>
+                      <p class="news-article__date">04.03.2023</p>
+                    </div>
+                    <div class="news-article__text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis ipsam pariatur repudiandae repellat cumque reprehenderit quas debitis minus facilis voluptas, fugiat soluta perferendis quis deserunt, in, optio numquam! A, eveniet.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque eveniet, voluptatibus. Doloribus fugiat accusamus facilis sequi nihil tempora nulla omnis amet qui explicabo perspiciatis debitis, expedita, distinctio voluptatibus a.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="modal-form" class="u-modal u-modal--size-md">
+    <div class="u-modal__container">
+      <header class="u-modal__header">
+        <button type="button" data-fancybox-close class="fancybox-button fancybox-button--close" title="Close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z"></path></svg></button>
+      </header>
+      <div class="u-modal__body">
+        <form action="#" class="form-contacts u-modal__form">
+          <div class="title-size-2 form-contacts__title hidden-sm">Позвоните<br>нам</div>
+          <div class="title-size-2 form-contacts__title visible-sm">Позвоните нам</div>
+          <div class="form-contacts__body">
+            <div class="form-contacts__field">
+              <input type="text" name="name" class="u-input" required placeholder="Имя*">
+            </div>
+            <div class="form-contacts__field">
+              <input type="tel" name="phone"class="js-phone-mask u-input" required placeholder="Телефон*">
+            </div>
+            <div class="form-contacts__privacy">
+              <div class="u-checkbox">
+                <input type="checkbox" name="privacy" id="form-privacy" class="u-checkbox__el" checked required>
+                <label for="form-privacy" class="u-checkbox__label">
+                  <a href="javascript:;" class="js-privacy-trigger">Согласен на обработку моих персональных данных</a>
+                </label>
+              </div>
+            </div>
+            <div class="form-contacts__privacy-text">Согласен на обработку моих персональных данныхСогласен на обработку моих персональных данныхСогласен на обработку моих персональных данныхСогласен на обработку моих персональных данныхСогласен на обработку моих персональных данныхСогласен на обработку моих персональных данных</div>
+            <button type="submit" class="btn btn--size-md btn--theme-accent form-contacts__btn">
+              <span class="btn__inner">
+                <span class="btn__title">Позвоните нам</span>
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <div id="modal-news-column" class="u-modal u-modal--size-md">
+    <div class="u-modal__container">
+      <header class="u-modal__header">
+        <button type="button" data-fancybox-close class="fancybox-button fancybox-button--close" title="Close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z"></path></svg></button>
+      </header>
+      <div class="u-modal__body">
+        <div class="js-slider-modal-column u-modal__body-slider-column">
+          <div class="u-modal__body-slider-column-slide">
+            <article class="news-card">
+              <picture class="news-card__picture">
+                <img src="./images/news-card-1.jpg" alt="Новость 1" class="news-card__img">
+              </picture>
+              <div class="news-card__content">
+                <h3 class="news-card__title">
+                  <a href="javascript:;" data-fancybox data-src="#modal-news" class="js-fancybox-init link-cover news-card__link">Новость 1</a>
+                </h3>
+                <p class="news-card__description">За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+              </div>
+            </article>
+          </div>
+          <div class="u-modal__body-slider-column-slide">
+            <article class="news-card">
+              <picture class="news-card__picture">
+                <img src="./images/news-card-4.jpg" alt="Новость 2" class="news-card__img">
+              </picture>
+              <div class="news-card__content">
+                <h3 class="news-card__title">
+                  <a href="javascript:;" data-fancybox data-src="#modal-news" class="js-fancybox-init link-cover news-card__link">Новость 2</a>
+                </h3>
+                <p class="news-card__description">За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+              </div>
+            </article>
+          </div>
+          <div class="u-modal__body-slider-column-slide">
+            <article class="news-card">
+              <picture class="news-card__picture">
+                <img src="./images/news-card-2.jpg" alt="Новость 3" class="news-card__img">
+              </picture>
+              <div class="news-card__content">
+                <h3 class="news-card__title">
+                  <a href="javascript:;" data-fancybox data-src="#modal-news" class="js-fancybox-init link-cover news-card__link">Новость 3</a>
+                </h3>
+                <p class="news-card__description">За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+              </div>
+            </article>
+          </div>
+          <div class="u-modal__body-slider-column-slide">
+            <article class="news-card">
+              <picture class="news-card__picture">
+                <img src="./images/news-card-3.jpg" alt="Новость 4" class="news-card__img">
+              </picture>
+              <div class="news-card__content">
+                <h3 class="news-card__title">
+                  <a href="javascript:;" data-fancybox data-src="#modal-news" class="js-fancybox-init link-cover news-card__link">Новость 4</a>
+                </h3>
+                <p class="news-card__description">За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+              </div>
+            </article>
+          </div>
+          <div class="u-modal__body-slider-column-slide">
+            <article class="news-card">
+              <picture class="news-card__picture">
+                <img src="./images/news-card-3.jpg" alt="Новость 4" class="news-card__img">
+              </picture>
+              <div class="news-card__content">
+                <h3 class="news-card__title">
+                  <a href="javascript:;" data-fancybox data-src="#modal-news" class="js-fancybox-init link-cover news-card__link">Новость 4</a>
+                </h3>
+                <p class="news-card__description">За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+              </div>
+            </article>
+          </div>
+          <div class="u-modal__body-slider-column-slide">
+            <article class="news-card">
+              <picture class="news-card__picture">
+                <img src="./images/news-card-3.jpg" alt="Новость 4" class="news-card__img">
+              </picture>
+              <div class="news-card__content">
+                <h3 class="news-card__title">
+                  <a href="javascript:;" data-fancybox data-src="#modal-news" class="js-fancybox-init link-cover news-card__link">Новость 4</a>
+                </h3>
+                <p class="news-card__description">За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+              </div>
+            </article>
+          </div>
+          <div class="u-modal__body-slider-column-slide">
+            <article class="news-card">
+              <picture class="news-card__picture">
+                <img src="./images/news-card-3.jpg" alt="Новость 4" class="news-card__img">
+              </picture>
+              <div class="news-card__content">
+                <h3 class="news-card__title">
+                  <a href="javascript:;" data-fancybox data-src="#modal-news" class="js-fancybox-init link-cover news-card__link">Новость 4</a>
+                </h3>
+                <p class="news-card__description">За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+              </div>
+            </article>
+          </div>
+          <div class="u-modal__body-slider-column-slide">
+            <article class="news-card">
+              <picture class="news-card__picture">
+                <img src="./images/news-card-3.jpg" alt="Новость 4" class="news-card__img">
+              </picture>
+              <div class="news-card__content">
+                <h3 class="news-card__title">
+                  <a href="javascript:;" data-fancybox data-src="#modal-news" class="js-fancybox-init link-cover news-card__link">Новость 4</a>
+                </h3>
+                <p class="news-card__description">За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+              </div>
+            </article>
+          </div>
+          <div class="u-modal__body-slider-column-slide">
+            <article class="news-card">
+              <picture class="news-card__picture">
+                <img src="./images/news-card-3.jpg" alt="Новость 4" class="news-card__img">
+              </picture>
+              <div class="news-card__content">
+                <h3 class="news-card__title">
+                  <a href="javascript:;" data-fancybox data-src="#modal-news" class="js-fancybox-init link-cover news-card__link">Новость 4</a>
+                </h3>
+                <p class="news-card__description">За 17 лет компании ни один из многоквартирных домов не вышел из управления</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal fancybox END-->
+</div>
+<!-- root END -->
+
+<script type="text/javascript" src="./js/jquery-3.6.0.min.js?v=136132632"></script>
+<script type="text/javascript" src="./js/jquery.fullPage.min.js?v=136132632"></script>
+<script type="text/javascript" src="./js/jquery.fancybox.min.js?v=136132632"></script>
+<script type="text/javascript" src="./js/slick.min.js?v=136132632"></script>
+<script type="text/javascript" src="./js/phone.mask.min.js?v=136132632"></script>
+<script type="text/javascript" src="./js/main.js?v=136132632"></script>
+
+</body>
+</html>
